@@ -36,7 +36,7 @@
               "RelativeDocumentMoniker": "Mascota.cpp",
               "ToolTip": "C:\\Users\\baroa\\source\\repos\\ProyectoVet\\Mascota.cpp",
               "RelativeToolTip": "Mascota.cpp",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-08-21T18:46:05.562Z",
               "EditorCaption": ""
@@ -49,7 +49,7 @@
               "RelativeDocumentMoniker": "Mascota.h",
               "ToolTip": "C:\\Users\\baroa\\source\\repos\\ProyectoVet\\Mascota.h",
               "RelativeToolTip": "Mascota.h",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAOAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2024-08-21T18:05:53.851Z",
               "EditorCaption": ""
@@ -69,10 +69,6 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{131369f2-062d-44a2-8671-91ff31efb4f4}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             },
             {
               "$type": "Bookmark",

@@ -1,3 +1,5 @@
+#include <iostream>
+#include <sstream>
 class Macota {
 private:
 	std::string nombre;
