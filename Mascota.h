@@ -1,15 +1,21 @@
+#ifndef MASCOTA_H
+#define MASCOTA_H
 #include <iostream>
 #include <sstream>
-class Macota {
+using namespace std;
+class Mascota {
 private:
-	std::string nombre;
+	string nombre;
 	char tipo;
 public:
 	Mascota();
-	Mascota(std::string, char);
-	void setNombre(std::string);
-	std::string getNombre();
+	Mascota(string, char);
+	void setNombre(string);
+	string getNombre();
 	void setTipo(char);
-	std::string getTipo();
-	std::string mostrarMascota();
+	string getTipo();
+	string mostrarMascota();
 };
+#endif // !MASCOTA_H
+
+

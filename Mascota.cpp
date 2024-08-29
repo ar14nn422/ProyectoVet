@@ -1,24 +1,24 @@
 #include "Mascota.h"
 
-Macota::Mascota()
+Mascota::Mascota()
 {
 	nombre = " ";
 	tipo = ' ';
 
 }
 
-Macota::Mascota(std::string nom, char tp)
+Mascota::Mascota(string nom, char tp)
 {
 	this->nombre = nom;
 	this->tipo = tp;
 }
 
-void Macota::setNombre(std::string nom)
+void Macota::setNombre(string nom)
 {
 	this->nombre = nom;
 }
 
-std::string Macota::getNombre()
+string Macota::getNombre()
 {
 	return nombre;
 }
@@ -28,15 +28,15 @@ void Macota::setTipo(char tp)
 	this->tipo = tp;
 }
 
-std::string Macota::getTipo()
+string Macota::getTipo()
 {
 	return tipo;
 }
 
-std::string Macota::mostrarMascota()
+string Macota::mostrarMascota()
 {
-	std::stringstream s;
-	s<<"Nombre de la mascota:"<<nombre<<std::endl;
-	s << "Tipo:" << tipo << std::endl;
+	stringstream s;
+	s<<"Nombre de la mascota:"<<nombre<<endl;
+	s << "Tipo:" << tipo << endl;
 	return s.str();
 }
