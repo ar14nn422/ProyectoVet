@@ -1,39 +1,39 @@
-#include "Mascota.h"
+#include "mascota.h"
 
-Mascota::Mascota()
+mascota::mascota()
 {
 	nombre = " ";
-	tipo = ' ';
+	tipo = "";
 
 }
 
-Mascota::Mascota(string nom, char tp)
+mascota::mascota(string nom, string tp)
 {
 	this->nombre = nom;
 	this->tipo = tp;
 }
 
-void Macota::setNombre(string nom)
+void mascota::setNombre(string nom)
 {
 	this->nombre = nom;
 }
 
-string Macota::getNombre()
+string mascota::getNombre()
 {
 	return nombre;
 }
 
-void Macota::setTipo(char tp)
+void mascota::setTipo(string tp)
 {
 	this->tipo = tp;
 }
 
-string Macota::getTipo()
+string mascota::getTipo()
 {
 	return tipo;
 }
 
-string Macota::mostrarMascota()
+string mascota::mostrarMascota()
 {
 	stringstream s;
 	s<<"Nombre de la mascota:"<<nombre<<endl;

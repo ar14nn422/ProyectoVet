@@ -3,16 +3,16 @@
 #include <iostream>
 #include <sstream>
 using namespace std;
-class Mascota {
+class mascota {
 private:
 	string nombre;
-	char tipo;
+	string tipo;
 public:
-	Mascota();
-	Mascota(string, char);
+	mascota();
+	mascota(string, string);
 	void setNombre(string);
 	string getNombre();
-	void setTipo(char);
+	void setTipo(string);
 	string getTipo();
 	string mostrarMascota();
 };
