@@ -1,15 +1,15 @@
 #include "coleccionmascotas.h"
 
-Mascotas::Mascotas(int n)
+coleccionmascotas::coleccionmascotas(int n)
 {
 	cant = 0;
 	tam = n;
-	mascota = new Mascota * [n];
+	mascota = new mascota * [n];
 	for (int i = 0; i < tam; i++)
 		mascota[i] = new Mascota;
 }
 
-Mascotas::~Mascotas()
+coleccionmascotas::~coleccionmascotas()
 {
 	for (int i = 0; i < cant; i++) {
 		delete mascota[i]; 
@@ -17,35 +17,37 @@ Mascotas::~Mascotas()
 	delete[] mascota; 
 }
 
-int Mascotas::getCant()
+int coleccionmascotas::getCant()
 {
 	return cant;
 }
 
-int Mascotas::getTam()
+int coleccionmascotas::getTam()
 {
 	return tam;
 }
 
-void Mascotas::setCant(int ncant)
+void coleccionmascotas::setCant(int ncant)
 {
 	cant = ncant;
 }
 
-void Mascotas::setTam(int ntam)
+void coleccionmascotas::setTam(int ntam)
 {
 	tam = ntam;
 }
 
-void Mascotas::agregarMascota(Mascotas* nMascota)
+void coleccionmascotas::agregarMascota(mascotas* nMascota)
 {
 	if (cant < tam) {
-		mascota[cant] = nuevaMascota; 
+		mascota[cant] = nMascota;
 		cant++;
 	}
 }
 
-string Mascotas::mostrarMascotas()
+
+
+string coleccionmascotas::mostrarMascotas()
 {
 	stringstream s;
 	for (int i = 0; i < cant; i++) {
