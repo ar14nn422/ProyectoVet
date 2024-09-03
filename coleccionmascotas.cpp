@@ -6,7 +6,7 @@ coleccionmascotas::coleccionmascotas(int n)
 	tam = n;
 	mascota = new mascota * [n];
 	for (int i = 0; i < tam; i++)
-		mascota[i] = new Mascota;
+		mascota[i] = new Mascota();
 }
 
 coleccionmascotas::~coleccionmascotas()
