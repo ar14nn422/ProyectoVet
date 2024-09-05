@@ -9,7 +9,7 @@ void menuprincipal::menu(){
 	cout << "Menu principal del sistema hospitalario" << endl << endl;
 	cout << "1-Submenu de Administracion" << endl;
 	cout << "2-Submenu de control de citas" << endl;
-	cout << "3-Submenu para Bsuquedas y listados" << endl;
+	cout << "3-Submenu para Busquedas y listados" << endl;
 	cout << "Favor ingrese su respuesta: " << endl;
 	cin >> respuesta;
 	switch (respuesta)
