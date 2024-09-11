@@ -53,4 +53,5 @@ string coleccionmascotas::mostrarMascotas()
 	for (int i = 0; i < cant; i++) {
 		s << mascota[i]->mostrarMascotas()<<endl;
 	}
+	return s.str();
 }
