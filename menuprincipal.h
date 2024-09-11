@@ -2,9 +2,7 @@
 #define MENUPRINCIPAL_H
 #include<iostream>
 #include<sstream>
-#include"submenuadministracion.h"
-#include"submenucontrolcitas.h"
-#include"busquedasylistados.h"
+//Cuando tengamos el header de citas lo tenemos que poner para llamar los metodos para los menu
 using namespace std;
 class menuprincipal {
 

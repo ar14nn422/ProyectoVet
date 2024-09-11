@@ -31,14 +31,102 @@ void menuprincipal::menu(){
 	}
 }
 void menuprincipal::opcionUno() {
-	submenuadministracion* submenu1 = new submenuadministracion();
-	submenu1->submenuadmin();
+	int respuesta;
+	cout << "Submenu de administracion" << endl << endl;
+	cout << "1-Ingresar especialidades" << endl;
+	cout << "2-Ingresar Doctor (Por especialidad)" << endl;
+	cout << "3-Ingresar Dueño" << endl;
+	cout << "4- Ingresar Mascota(por dueño)" << endl;
+	cout << "0-Regresar al menu principal" << endl;
+	cout << "Favor ingrese su respuesta: " << endl;
+	cin >> respuesta;
+	switch (respuesta){
+	case 1:
+		system("cls");
+		break;
+	case 2:
+		system("cls");
+		break;
+	case 3:
+		system("cls");
+		break;
+	case 4:
+		system("cls");
+		break;
+	case 0:
+		system("cls");
+		break;
+	default:
+		cout << "Favor ingrese una opcion valida" << endl;
+		system("cls");
+		opcionUno();
+		break;
+	}
 }
 void menuprincipal::opcionDos() {
-	submenucontrol* submenu2 = new submenucontrol();
-	submenu2->submenuctrl();
+	int respuesta;
+	cout << "Submenu de control de citas" << endl << endl;
+	cout << "1-Sacar Cita" << endl;
+	cout << "2-Cancelar Cita" << endl;
+	cout << "3-Mostrar Calendario de Citas por Doctor" << endl;
+	cout << "4- Mostrar Citas por Dueño" << endl;
+	cout << "0-Regresar al menu principal" << endl;
+		cout << "Favor ingrese su respuesta: " << endl;
+	cin >> respuesta;
+	switch (respuesta){
+	case 1:
+		system("cls");
+		break;
+	case 2:
+		system("cls");
+		break;
+	case 3:
+		system("cls");
+		break;
+	case 4:
+		system("cls");
+		break;
+	case 0:
+		system("cls");
+		break;
+	default:
+		cout << "Favor ingrese una opcion valida" << endl;
+		system("cls");
+		opcionDos();
+		break;
+	}
+
 }
 void menuprincipal::opcionTres() {
-	busquedasylistados* submenu3 = new busquedasylistados();
-	submenu3->submenuByL();
+	int respuesta;
+	cout << "Submenu para Busquedas y listados" << endl << endl;
+	cout << "1-Mostrar Listados de Especialidades" << endl;
+	cout << "2-Mostrar Listado de Doctores por Especialidad" << endl;
+	cout << "3-Mostrar Dueños por Mascotas" << endl;
+	cout << "4- Mostrar Pacientes por Doctor" << endl;
+	cout << "0-Regresar al menu principal" << endl;
+	cout << "Favor ingrese su respuesta: " << endl;
+	cin >> respuesta;
+	switch (respuesta) {
+	case 1:
+		system("cls");
+		break;
+	case 2:
+		system("cls");
+		break;
+	case 3:
+		system("cls");
+		break;
+	case 4:
+		system("cls");
+		break;
+	case 0:
+		system("cls");
+		break;
+	default:
+		cout << "Favor ingrese una opcion valida" << endl;
+		system("cls");
+		opcionDos();
+		break;
+	}
 }
