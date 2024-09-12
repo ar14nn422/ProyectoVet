@@ -1,15 +1,21 @@
 #include "Dueño.h"
 Dueño::Dueño() {
-	NombreDuenno = 0;
+	NombreDuenno = " ";
+	id = " ";
 	mascotas = nullptr;
 }
-Dueño::Dueño(string nombred, coleccionmascotas* mascotas) {
+Dueño::Dueño(string nombred,string id coleccionmascotas* mascotas) {
 	NombreDuenno = nombred;
+	id = id;
 	mascotas = mascotas;
 }
 void Dueño::setNombreDuenno(string nombred)
 {
 	NombreDuenno = nombred;
+}
+
+void Dueño::setId(string id) {
+	id = id;
 }
 
 void Dueño::setColeccionmascotas(coleccionmascotas* mascotas)
@@ -20,6 +26,11 @@ void Dueño::setColeccionmascotas(coleccionmascotas* mascotas)
 string Dueño::getNombreDuenno()
 {
 	return NombreDuenno;
+}
+
+string Dueño::getId()
+{
+	return id;
 }
 
 coleccionmascotas* Dueño::getMascotas()
@@ -37,7 +48,8 @@ void Dueño::asignarMascotas()
 string Dueño::mostrarMasc_d()
 {
 	stringstream s;
-	s << NombreDuenno << endl;
-	s << mostrarMascotas() << endl;
+	s << "Dueño:"<< NombreDuenno << endl;
+	s << "Número de identidficación:"<<id << endl;
+	s <<"Mascotas asociadas:"<< mostrarMascotas() << endl;
 	return s.str();
 }
