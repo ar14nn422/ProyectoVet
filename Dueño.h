@@ -4,7 +4,7 @@
 #define DUEÑO_H
 class Dueño {
 public:
-	string setNombreDuenno;
+	string NombreDuenno;
 	coleccionmascotas* mascotas;
 private:
 	Dueño();

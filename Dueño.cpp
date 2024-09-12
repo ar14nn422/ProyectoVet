@@ -1,26 +1,30 @@
 #include "Dueño.h"
 Dueño::Dueño() {
-
+	NombreDuenno = 0;
+	mascotas = nullptr;
 }
-Dueño::Dueño(string, coleccionmascotas*) {
-
+Dueño::Dueño(string nombred, coleccionmascotas* mascotas) {
+	NombreDuenno = nombred;
+	mascotas = mascotas;
 }
-void Dueño::setNombreDuenno(string)
+void Dueño::setNombreDuenno(string nombred)
 {
+	NombreDuenno = nombred;
 }
 
-void Dueño::setColeccionmascotas(coleccionmascotas*)
+void Dueño::setColeccionmascotas(coleccionmascotas* mascotas)
 {
+	mascotas = mascotas;
 }
 
 string Dueño::getNombreDuenno()
 {
-	return string();
+	return NombreDuenno;
 }
 
 coleccionmascotas* Dueño::getMascotas()
 {
-	return nullptr;
+	return mascotas;
 }
 
 void Dueño::asignarMascotas()
@@ -32,5 +36,7 @@ void Dueño::asignarMascotas()
 
 string Dueño::mostrarMasc_d()
 {
-	return string();
+	stringstream s;
+	s << mostrarMascotas() << endl;
+	return s.str();
 }
