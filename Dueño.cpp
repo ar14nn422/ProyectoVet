@@ -37,6 +37,7 @@ void Dueño::asignarMascotas()
 string Dueño::mostrarMasc_d()
 {
 	stringstream s;
+	s << NombreDuenno << endl;
 	s << mostrarMascotas() << endl;
 	return s.str();
 }
