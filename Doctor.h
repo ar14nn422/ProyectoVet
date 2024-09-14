@@ -1,20 +1,22 @@
 #ifndef DOCTOR_H
 #define DOCTOR_H
 #include "mascota.h"
-#include "horario.h"
+#include "horas.h"
 using namespace std;
 class doctor {
 private:
 	string nombre;
 	doctor** masc;
-	int tam = 60;
-	int cant = 0;
+	int tam;
+	int cant ;
+	int semana;
+	int diaAc;
 	doctor** dias;
 public:
 	doctor(string);
-	void agregarPaciente(int);
+	void generarHorario();
+	void agregarPaciente(mascota*);
 	string getPacientes();
-	bool horarioDisponible(int);
 	~doctor();
 };
 #endif // 
