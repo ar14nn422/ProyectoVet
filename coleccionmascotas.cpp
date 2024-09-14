@@ -4,9 +4,9 @@ coleccionmascotas::coleccionmascotas(int n)
 {
 	cant = 0;
 	tam = n;
-	mascota = new mascota * [n];
+	mascotas = new mascota * [n];
 	for (int i = 0; i < tam; i++)
-		mascota[i] = new Mascota();
+		mascotas[i] = new Mascota();
 }
 
 coleccionmascotas::~coleccionmascotas()
@@ -37,7 +37,7 @@ void coleccionmascotas::setTam(int ntam)
 	tam = ntam;
 }
 
-void coleccionmascotas::agregarMascota(mascotas* nMascota)
+void coleccionmascotas::agregarMascota(mascota* nMascota)
 {
 	if (cant < tam) {
 		mascota[cant] = nMascota;

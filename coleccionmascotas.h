@@ -6,7 +6,7 @@ class coleccionmascotas {
 private:
 	int cant;
 	int tam;
-	coleccionmascotas** mascota;
+	coleccionmascotas** masc;
 
 public:
 	coleccionmascotas(int);
@@ -15,7 +15,7 @@ public:
 	int getTam();
 	void setCant(int);
 	void setTam(int);
-	void agregarMascota(mascotas*);
+	void agregarMascota(mascota*);
 	string mostrarMascotas();
 };
 #endif
