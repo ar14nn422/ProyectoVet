@@ -6,16 +6,17 @@ dia::dia() {
 	hor [tam] = new horas*
 	for (i = 0; i < tam;i++) {
 		hor[i] = new horas();
+		hor[i]->setEstado(false);
 	}
 }
 bool dia::getDisponible() {
 	for (i;i < tam;i++) {
-		hor[i]->getEstado();
+		return hor[i]->getEstado();
 	}
 }
 dia::~dia() {
 	for (i;i < tam;i++) {
 		delete hor[i];
 	}
-	delete hor[];
+	delete[] hor;
 }

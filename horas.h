@@ -9,7 +9,7 @@ private:
 	bool ocupado;
 public:
 	horas();
-	void setEstado();
+	void setEstado(bool);
 	bool getEstado();
 };
 #endif // !HORA_H

@@ -12,9 +12,9 @@ coleccionmascotas::coleccionmascotas(int n)
 coleccionmascotas::~coleccionmascotas()
 {
 	for (int i = 0; i < cant; i++) {
-		delete mascota[i]; 
+		delete mascotas[i]; 
 	}
-	delete[] mascota; 
+	delete[] mascotas; 
 }
 
 int coleccionmascotas::getCant()
@@ -40,7 +40,7 @@ void coleccionmascotas::setTam(int ntam)
 void coleccionmascotas::agregarMascota(mascota* nMascota)
 {
 	if (cant < tam) {
-		mascota[cant] = nMascota;
+		mascotas[cant] = nMascota;
 		cant++;
 	}
 }
